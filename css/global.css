@@ -1,0 +1,84 @@
+:root {
+	--general-text: #312C27;
+	--accent-text: #1F1711;
+	--accent-text-2: #CEAAD0;
+	--general-bg: #FFF9F4;
+	--accent-bg: #FFE0CB;
+	--accent-color: #F9C06A;
+	--input-color: #AC907A;
+    --transition: all .4s;
+    --border-radius: 20px;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+.body {
+    font-family: "Playfair Display", sans-serif;
+    /* font-size: 16px; */
+    line-height: 1.5;
+    color: var(--general-text);
+    background: var(--general-bg); 
+}
+.body--opened-menu {
+    overflow: hidden;
+}
+.body--opened-modal {
+    overflow: hidden;
+}
+
+.wrapper{
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.main__about {
+    padding: 140px 0;
+}
+
+.main__program,
+.main__gallery,
+.main__testimonials {
+    padding-bottom: 145px;
+}
+
+.container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 93px;
+    height: 100%;
+}
+
+.title {
+    font-family: 'Gabriola';
+    font-size: 74px;
+    line-height: 0.82;
+    color: var(--accent-text);
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-color);
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    padding: 3px 25px;
+    height: 50px;
+
+    transition: (--transition);
+}
+.button:hover {
+    background: #FF9138;
+}
