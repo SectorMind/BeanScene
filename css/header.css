@@ -54,6 +54,14 @@
     color: #ffffff;
     min-width: 60px;
 }
+.sing-up__button{
+    font-weight: 500;
+}
+.sing-in:hover {
+    opacity: 1;
+    transform: scale(1.1); /* Увеличиваем масштаб */
+    transition: var(--transition);
+}
 
 .burger-icon {
     display: none;
@@ -113,19 +121,26 @@
     gap: 30px;
 }
 .hero__content {
-    max-width: 527px;
+    max-width: 530px;
+    display: flex;
+    flex-direction: column
 }
 .hero__title {
-    margin-bottom: 30px;
+    display: flex;
+    height: 291px;
     font-family: "Clicker Script";
+    align-items: center;
+    justify-content: space-between;
+    font-size: 220px;
+    line-height: 0.82;
     color: #ffffff;
 }
 .hero__text {
-    margin-bottom: 40px;
     color: #ffffff;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 34px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 29px;
     letter-spacing: 0%;
     text-align: left;
+    padding-bottom: 20px;
 }

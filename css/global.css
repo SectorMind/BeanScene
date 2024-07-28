@@ -6,7 +6,7 @@
 	/* --accent-bg: #FFE0CB;*/
 	--button-color: #f9c06a;
 	/*--input-color: #AC907A;*/
-    --transition: all .4s;
+    --transition: all .34s;
     /*--border-radius: 20px; */
 }
 html {
@@ -53,15 +53,20 @@ html {
 .container {
     max-width: 1366px;
     margin: 0 auto;
-    padding: 0 93px;
+    padding: 0 82px;
     height: 100%;
+    padding-top: 82px;
+}
+.container:first-child {
+    padding-top: 0;
 }
 
 .title {
-    font-family: "Clicker Script";
-    font-size: 220px;
-    line-height: 0.82;
-    color: #ffffff;
+    font-size: 54px;
+    font-weight: bold;
+    letter-spacing: 0%;
+    line-height: 72px;
+    color: #603809;
 }
 
 .button {
@@ -74,7 +79,7 @@ html {
     background: var(--button-color);
     box-shadow: 0px 6px 12px 0px #f9c06a38;
     border-radius: 24px;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 14px;
     line-height: 19px;
     padding: 3px 25px;
