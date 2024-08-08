@@ -1,5 +1,10 @@
 /* ++++++++++++++++++++ header ++++++++++++++++++++ */
 /* ++++++++++++++++++++ header nav ++++++++++++++++++++ */
+@import "fonts.css";
+@import "reset.css";
+@import "global.css";
+@import "modal.css";
+/* @import "media.css"; */
 
 .header{
     background: linear-gradient(90deg, #1E1E1E -6.88%, #00000000 87.45%), url("../img/content/coffee_image.jpg") 50% 100% / cover no-repeat;

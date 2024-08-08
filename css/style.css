@@ -197,17 +197,18 @@
 }
 /* ++++++++++++++++++++ section 4 ++++++++++++++++++++ */
 .main__call-buy {
-    position: relative;
-    background-image: linear-gradient(#603809, #00000000), url("../img/content/ins/coffee-and-cup.png") 100% 100% / cover no-repeat;
-    background-color: #603709cc;
 }
 .call-buy__inner {
+    position: relative;
+    left: -93px;
     display: grid;
     grid-template: repeat(3, auto) / 1.65fr 1fr;
-    /* background: linear-gradient(#603809 -6.88%, #00000000 80%), url("../img/content/ins/coffee-and-cup.png") 100% 100% / cover no-repeat; */
+    width: 1366px;
+    background: linear-gradient(#603809cc, #603809cc), url("../img/content/ins/coffee-and-cup.png") 10% 100% / cover no-repeat;
 }
 .call-buy__content {
-    width: 575px;
+    padding: 135px 0 0 93px;
+    width: 688px;
 }
 .call-buy__header {
     color: #ffffff;
@@ -260,6 +261,9 @@
     padding-top: 16px;
 }
 .testimonials__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
 }
 .testimonials__prev:hover {
     background: #FF9138;
@@ -289,6 +293,11 @@
     background: rgb(249, 192, 106);
 }
 .testimonials__slider {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid rgba(249, 192, 106, 0.42);
+    background: rgb(255, 249, 241);
+    margin: 45px 0 138px;
 }
 .swiper {
 }
@@ -301,6 +310,7 @@
 .swiper-slide {
 }
 .testimonials__blockquote-img {
+    padding: 54px 0 0 29px;
 }
 .testimonials__quote {
     width: 780px;
@@ -310,6 +320,8 @@
     line-height: 36px;
     letter-spacing: 0%;
     text-align: center;
+    padding-top: 13px;
+    margin: auto;
 }
 .testimonials__costomer {
     text-align: center;
@@ -331,117 +343,85 @@
     padding: 4px 0 45px;
 }
 .testimonials__costomer-img {
+    position: absolute;
 }
 .testimonials__scrollbar {
 }
 .swiper-scrollbar {
 }
 
-/* ++++++++++++++++++++ section con ++++++++++++++++++++ */
-
-.contact {
-    padding: 140px 0;
-    background: url("../img/decor/bg-footer.png") 50% 0% / cover no-repeat;
+/* ++++++++++++++++++++ section 6 ++++++++++++++++++++ */
+.main__subscribe {
 }
-.contact__inner {
-    display: flex;
-    align-items: end;
-    gap: 84px;
+.subscribe__inner {
     position: relative;
+    left: -93px;
+    display: grid;
+    grid-template: auto;
+    width: 1366px;
+    height: 374px;
+    background: linear-gradient(#603809cc, #603809cc), url("../img/content/ins/coffee-and-cup.png") 100% / cover no-repeat;
 }
-.contact__inner::before {
-    content: url("../img/decor/berries.png");
-    position: absolute;
-    top: -4%;
-    left: 0;
+.subscribe__content {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 80px 0px;
 }
-.contact__inner::after {
-    content: url("../img/decor/berries-2.png");
-    position: absolute;
-    top: 4%;
-    right: 0;
+.subscribe__header {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 72px;
 }
-.contact__img img {
-    width: 100%;
-    filter: drop-shadow(0px 4px 30px #c6b0a14d);  /* тень для png */
+.subscribe__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    padding-bottom: 24px;
 }
-.contact__body {
-    max-width: 420px;
+.subscribe__input {
+    display: flex;
+    max-width: 642px;
+    box-sizing: border-box;
+    border-radius: 1px;
+    border-radius: 4px;
+    background: rgb(255, 249, 241);
+    justify-content: space-between;
 }
-.contact__title {
-    margin-bottom: 20px;
-}
-.contact__text {
-    margin-bottom: 40px;
-}
-.contact__label {
-    margin-bottom: 10px;
-}
-.contact__input {
+.subscribe__input-email {
     display: block;
     width: 100%;
-    background: #00000000;
-    border: 1px solid var(--input-color);
+    /* background: #00000000; */
     border-radius: 100px;
-    padding: 19px 42px 19px 28px;
+    padding: 7px;
     font-size: 16px;
     margin-bottom: 10px;
     transition: var(--transition);
-    margin-bottom: 20px;
 }
-.contact__input:hover {
-    border-color: var(--accent-color);
+.subscribe__order {
 }
-.contact__input::placeholder {
-    color: var(--accent-color);
-    transition: var(--transition);
+.subscribe__order-button {
+    border-radius: 1px;
 }
-.contact__input:hover::placeholder {
-    color: var(--accent-color);
-}
-.contact__check-label {
+.subscribe__img {
     display: flex;
-    align-items: start;
-    gap: 5px;
-    max-width: 288px;
-    font-size: 13px;
-    margin-bottom: 20px;
+    justify-content: space-between;
 }
-.contact__check-label a {
-    text-decoration: underline;
-    transition: var(--transition);
-}
-.contact__check-label a:hover {
-    color: var(--accent-color);
-}
-.contact__checkbox {
-    appearance: none;
-    margin-top: 1.5px;
-    width: 16px;
-    height: 16px;
-    border: 1.5px solid var(--input-color);
-    transition: var(--transition);
-    border-radius: 4px;
-    flex-shrink: 0;  /*чтобы не сплюскивались*/
-    cursor: pointer;
-    position: relative;
-}
-.contact__checkbox::before {
-    content: '';
+.subscribe__img-left {
     position: absolute;
-    inset: 0;  /* будет перекрывать элемент как полотно */
-    background: url("../img/icons/check.svg") 50% 50% no-repeat;
-    opacity: 0;  /* скроет элемент*/
+    left: -145px;
+    bottom: -120px;
+
+    width: 444px;
+    height: 358px;
 }
-.contact__checkbox:hover {
-    border: 1.5px solid var(--accent-color);
-}
-.contact__checkbox:checked {
-    border: 1.5px solid var(--accent-color);
-    background: var(--accent-color);
-}
-.contact__checkbox:checked::before {
-    opacity: 1;  /* отобразит элемент*/
+.subscribe__img-right {
+    position: absolute;
+    right: -230px;
+    bottom: -120px;
+    width: 444px;
+    height: 358px;
 }
 
 /* ++++++++++++++++++++ media queries ++++++++++++++++++++ */
