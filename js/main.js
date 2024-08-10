@@ -112,11 +112,11 @@
         });
     })
 
-    /* slider-gallery */
+    /* slider-rewues */
 
-    const swiper = new Swiper('.gallery__slider', {
+    const swiper = new Swiper('.testimonials__slider', {
 
-        spaceBetween: 15,
+        spaceBetween: 0,
         slidesPerView: 2,
 
         // Optional parameters
@@ -125,57 +125,9 @@
 
         // If we need pagination
         pagination: {
-            el: '.gallery__pagination',
+            el: '.testimonials__pagination',
             type: 'fraction'
         },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.gallery__next',
-            prevEl: '.gallery__prev',
-        },
-
-        // And if we need scrollbar
-        // scrollbar: {
-        //     el: '.swiper-scrollbar',
-        // },
-
-        breakpoints: {
-            // when window width is >= 320px
-            // 320: {
-            //     slidesPerView: 2,
-            //     spaceBetween: 20
-            // },
-            // when window width is >= 640px
-            601: {
-                slidesPerView: 3,
-            },
-            801: {
-                spaceBetween: 32,
-            },
-            1101: {
-                slidesPerView: 4,
-            },
-        }
-    });
-
-    /* slider-reviews */
-    
-    new Swiper('.testimonials__slider', {
-
-        spaceBetween: 0,
-        slidesPerView: 1,
-        centeredSlides: true,
-
-        // Optional parameters
-        // direction: 'vertical',
-        // loop: true,
-
-        // If we need pagination
-        // pagination: {
-            //     el: '.gallery__pagination',
-        //     type: 'fraction'
-        // },
 
         // Navigation arrows
         navigation: {
@@ -188,26 +140,25 @@
         //     el: '.swiper-scrollbar',
         // },
 
-        breakpoints: {
-            // when window width is >= 320px
-            // 320: {
-            //     slidesPerView: 2,
-            //     spaceBetween: 20
-            // },
-            // when window width is >= 640px
-            901: {
-                slidesPerView: 1.5,
-            },
-            1101: {
-                slidesPerView: 2.1,
-            }
-        },
-
-        scrollbar: {
-            el: '.swiper-scrollbar',
-            draggable: true,
-        },
+        // breakpoints: {
+        //     // when window width is >= 320px
+        //     // 320: {
+        //     //     slidesPerView: 2,
+        //     //     spaceBetween: 20
+        //     // },
+        //     // when window width is >= 640px
+        //     601: {
+        //         slidesPerView: 3,
+        //     },
+        //     801: {
+        //         spaceBetween: 32,
+        //     },
+        //     1101: {
+        //         slidesPerView: 4,
+        //     },
+        // }
     });
+
     
     // mask for tel
 
