@@ -1,14 +1,15 @@
 :root {
-	--general-text: rgb(112, 112, 112);
-	--header-text: #603809;
-	/* --accent-text-2: #CEAAD0; */
-	--general-bg: #ffffff;
-	/* --accent-bg: #FFE0CB;*/
-	--button-color: #f9c06a;
-	/*--input-color: #AC907A;*/
+    --general-text: rgb(112, 112, 112);
+    --header-text: #603809;
+    /* --accent-text-2: #CEAAD0; */
+    --general-bg: #ffffff;
+    /* --accent-bg: #FFE0CB;*/
+    --button-color: #f9c06a;
+    /*--input-color: #AC907A;*/
     --transition: all .34s;
-    /*--border-radius: 20px; */
+    --border-radius: 20px;
 }
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
@@ -19,16 +20,18 @@ html {
     /* font-size: 16px; */
     line-height: 1.5;
     color: var(--general-text);
-    background: var(--general-bg); 
+    background: var(--general-bg);
 }
+
 .body--opened-menu {
     overflow: hidden;
 }
+
 .body--opened-modal {
     overflow: hidden;
 }
 
-.wrapper{
+.wrapper {
     min-height: 100%;
     width: 100%;
     overflow: hidden;
@@ -57,6 +60,7 @@ html {
     height: 100%;
     padding-top: 82px;
 }
+
 .container:first-child {
     padding-top: 0;
 }
@@ -87,6 +91,14 @@ html {
 
     transition: var(--transition);
 }
+
+.sub-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0%;
+}
+
 .button:hover {
     background: #FF9138;
 }

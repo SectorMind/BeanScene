@@ -2,7 +2,8 @@
 
 .modal {
     position: fixed;
-    inset: 0;  /* Растягиваем на весь экран */
+    inset: 0;
+    /* Растягиваем на весь экран */
     z-index: 10;
     background: #00000071;
     padding: 15px;
@@ -16,54 +17,70 @@
     transition: all .6s;
 }
 
-.body--opened-modal .modal{
+.body--opened-modal .modal {
     opacity: 1;
     visibility: visible;
 }
 
 .modal__window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    background: var(--general-bg);
+    background: #fff;
     border-radius: var(--border-radius);
     padding: 0 60px 60px;
     max-width: 428px;
 }
+
 .modal__cancel {
     position: absolute;
     top: 20px;
     right: 20px;
 }
+
 .modal__cancel path rect {
     transition: var(--transition);
 }
+
 .modal__cancel:hover path,
 .modal__cancel:hover rect {
     stroke: var(--input-color);
 }
+
 .modal__img {
-    margin: -65px 0 15px 13px;
+    margin: -152px 0 0px -27px;
     max-width: 100%;
 }
+
 .modal__title {
-    font-family: 'Gabriola';
+    font-family: "Clicker Script";
     font-size: 42px;
     line-height: .9;
-    color: var(--accent-text);
+    color: #603809;
     margin-bottom: 10px;
 }
+
 .modal__text {
     margin-bottom: 30px;
 }
+
 .modal__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .modal__form-label {
     margin-bottom: 10px;
 }
+
 .field {
     position: relative;
     display: block;
     margin-bottom: 10px;
 }
+
 .field span {
     position: absolute;
     top: 12px;
@@ -75,6 +92,7 @@
     visibility: hidden;
     transition: var(--transition);
 }
+
 .field__input {
     display: block;
     width: 100%;
@@ -85,21 +103,27 @@
     font-size: 16px;
     margin-bottom: 10px;
     transition: var(--transition);
+    border: 1px solid #707070;
 }
+
 .field__input:hover {
     border-color: var(--accent-color);
 }
+
 .field__input::placeholder {
     color: var(--accent-color);
     transition: var(--transition);
 }
+
 .field__input:hover::placeholder {
     color: var(--accent-color);
 }
+
 .field__input:focus {
     padding: 26px 42px 12px 28px;
 }
-.field__input:focus + span {
+
+.field__input:focus+span {
     opacity: 1;
     visibility: visible;
 }
