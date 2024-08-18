@@ -23,9 +23,11 @@
 
     /* Modal window */
     const modal = document.querySelector('.modal');
-    const modalButton = document.querySelector('.sing-in');
+    const modalButtonSingIn = document.querySelector('.sing-in');
+    const modalButton = document.querySelectorAll('.button');
+    modalButton.forEach((element) => element.addEventListener('click', openModal));
 
-    modalButton.addEventListener('click', openModal);
+    modalButtonSingIn.addEventListener('click', openModal);
     modal.addEventListener('click', closeModal);
 
     function openModal(e) {
